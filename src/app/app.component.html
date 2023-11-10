@@ -1,0 +1,69 @@
+<div class="container">
+  <h1 class="text-center">Filtraciones de CO2</h1>
+  <div class="row">
+    <div class="col-2">
+      <div class="container-form">
+        <div class="col-md-4">
+          <div class="form-group">
+            <mat-form-field>
+              <mat-label class="anio_label">Pais</mat-label>
+              <mat-select [(value)]="selectedOption">
+                <mat-option *ngFor="let option of options" [value]="option">
+                  {{ option }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+              <mat-form-field>
+                <mat-label class="anio_label">Año inicial</mat-label>
+                <mat-select [(value)]="selectedOption2">
+                  <mat-option *ngFor="let option of options2" [value]="option">
+                    {{ option }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <mat-form-field>
+                <mat-label class="anio_label">Año final</mat-label>
+                <mat-select [(value)]="selectedOption3">
+                  <mat-option *ngFor="let option of options2" [value]="option">
+                    {{ option }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+       
+        <button (click)="filtro(selectedOption, selectedOption2,selectedOption3)" class="btn-filtro" mat-button>Consultar</button>
+      </div>
+    </div>
+
+    <div class="col-5" *ngIf="visible == true">
+      <div class="canvas" >
+        <canvas id="chart"></canvas>
+      </div>
+    </div>
+
+  
+
+      <div class="col-5" *ngIf="visible == true">
+        <div class="canvas">
+          <canvas id="chart2"></canvas>
+        </div>
+      </div>
+</div>
+
+<div class="col-10" *ngIf="visible == true">
+    <div class="canvas2" >
+      <canvas id="chart3"></canvas>
+    </div>
+  </div>
+</div>
+

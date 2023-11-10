@@ -1,0 +1,44 @@
+.container-form{
+    margin-left: -80px;
+    border: 2px solid #AA92CE;
+    height: 350px;
+    width: 300px;  
+}
+.text-center{
+  font-weight: bold;
+}
+
+.form-group {
+    margin: 25px 30px 30px 30px; 
+
+}
+.anio_label{
+  font-weight: 500;
+  color: rgb(77, 59, 109);
+}
+.btn-filtro{
+  margin-left: 25px;
+  width: 95px;
+  height: 30px;
+  border-radius: 20px;
+  border-color: #F5EDF9;
+  color: #F5EDF9;
+  background-color: #8049df;
+}
+.btn-filtro:hover{
+  background: linear-gradient(to bottom right, #895bda, rgb(50, 113, 165));
+}
+.canvas {
+    margin-left: 140px;
+    height: 50%;
+    border: 2px dotted #AA92CE;
+    margin-top: 20px;
+  }
+  .canvas2 {
+    margin-left: 430px;
+    height: 20%;
+    margin-top: -130px;
+    text-align: center;
+    border: 2px dotted #AA92CE;
+  }
+  
